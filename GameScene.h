@@ -1,10 +1,10 @@
 #pragma once
 #include "KamataEngine.h"
 
-class GameScene 
+enum class LRDirection
 {
 public:
-	void Initialize();
+	void Initialize(KamataEngine::Model* model, uint32_t textureHandle, KamataEngine::Camera* camera, const KamataEngine::Vector3& position);
 
 	void Update();
 
